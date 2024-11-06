@@ -1,0 +1,63 @@
+.sidebar {
+  width: 12rem;
+  position: fixed;
+  top: 72px;
+  left: 0;
+  bottom: 0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  overflow-y: auto;
+  z-index: 9; 
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: stretch;
+  width: 100%;
+}
+
+.navLink {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease-out;
+  text-align: center;
+  color: #1f2937;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #FF6600;
+  transition: width 0.5s ease-out;
+}
+
+.navLink:hover {
+  background-color: #f3f4f6;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.navLinkIcon {
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,17 @@
+.rootContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  display: flex;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  margin-left: 12rem; 
+  margin-top: 72px;
+}
